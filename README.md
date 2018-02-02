@@ -7,4 +7,5 @@
 Minecraft Forge 1.7.10
 
 ## Author
-(C) Copyright 2015-2017 Genbu Project & Genbu Hase
+* Genbu Project
+* Genbu Hase
