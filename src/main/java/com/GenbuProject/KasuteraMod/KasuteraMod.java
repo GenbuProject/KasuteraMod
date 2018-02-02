@@ -12,7 +12,6 @@ import net.minecraftforge.common.MinecraftForge;
 
 import com.GenbuProject.KasuteraMod.Blocks.KasuteraBlock;
 import com.GenbuProject.KasuteraMod.Blocks.KasuteraChest;
-import com.GenbuProject.KasuteraMod.Handlers.KasuteraTowerGenerateHandler;
 import com.GenbuProject.KasuteraMod.Items.KasuteraCarTicket;
 import com.GenbuProject.KasuteraMod.Items.KasuteraEgg;
 import com.GenbuProject.KasuteraMod.Items.Foods.KasuteraMeet;
@@ -37,7 +36,7 @@ import cpw.mods.fml.relauncher.SideOnly;
 
 public class KasuteraMod {
 	public final static String ModID = "KasuteraMod";
-	public final static String Version = "1.5";
+	public final static String Version = "1.6";
 
 	final BiomeGenBase[] SPAWNLIST = {
 		BiomeGenBase.beach,
@@ -163,6 +162,5 @@ public class KasuteraMod {
 
 	protected void AddHandlers() {
 		MinecraftForge.EVENT_BUS.register(this);
-		MinecraftForge.EVENT_BUS.register(new KasuteraTowerGenerateHandler());
 	}
 }
