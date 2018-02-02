@@ -1,0 +1,61 @@
+{
+	"Sigure": {
+		"category": "master",
+		"sounds": [
+			{
+				"name": "Sigure",
+				"stream": false
+			}
+		]
+	},
+
+	"Kasutera.Voice1": {
+		"category": "hostile",
+		"sounds": [
+			{
+				"name": "Voices/Kasutera/Voice1",
+				"stream": false
+			}
+		]
+	},
+
+	"Kasutera.Voice2": {
+		"category": "hostile",
+		"sounds": [
+			{
+				"name": "Voices/Kasutera/Voice2",
+				"stream": false
+			}
+		]
+	},
+
+	"Kasutera.Voice3": {
+		"category": "hostile",
+		"sounds": [
+			{
+				"name": "Voices/Kasutera/Voice3",
+				"stream": false
+			}
+		]
+	},
+
+	"Kasutera.OnHurted": {
+		"category": "hostile",
+		"sounds": [
+			{
+				"name": "Voices/Kasutera/OnHurted",
+				"stream": false
+			}
+		]
+	},
+
+	"Kasutera.OnDeath": {
+		"category": "hostile",
+		"sounds": [
+			{
+				"name": "Voices/Kasutera/OnDeath",
+				"stream": false
+			}
+		]
+	}
+}

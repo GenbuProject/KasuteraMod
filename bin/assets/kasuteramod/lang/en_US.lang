@@ -1,0 +1,10 @@
+####################################################################################################
+tile.KasuteraBlock.name=Kasutera Block
+tile.KasuteraTNT.name=TNT of Kasutera
+
+item.KasuteraMeet.name=Meet of Kasutera
+item.KasuteraEgg.name=Egg of Kasutera
+item.KasuteraCarTicket.name=Ticket for Kasutera Car
+item.KasuteraSword.name=Sword of Kasutera
+
+itemGroup.KasuteraTab=Kasutera Mod
