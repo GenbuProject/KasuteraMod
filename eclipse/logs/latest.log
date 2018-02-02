@@ -1,0 +1,106 @@
+[13:22:08] [main/INFO]: Setting user: Player4
+[13:22:11] [Client thread/INFO]: LWJGL Version: 2.9.1
+[13:22:29] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:かすてら。Mod
+[13:22:30] [Sound Library Loader/INFO]: Sound engine started
+[13:22:30] [Client thread/WARN]: File minecraft:sounds/mob/horse/zombie/hit3.ogg does not exist, cannot add it to event minecraft:mob.horse.zombie.hit
+[13:22:31] [Client thread/WARN]: File minecraft:sounds/random/glass3.ogg does not exist, cannot add it to event minecraft:dig.glass
+[13:22:31] [Client thread/WARN]: File minecraft:sounds/random/glass3.ogg does not exist, cannot add it to event minecraft:game.potion.smash
+[13:22:32] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[13:22:32] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[13:22:32] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:かすてら。Mod
+[13:22:33] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[13:22:33] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[13:22:34] [Sound Library Loader/INFO]: Sound engine started
+[13:22:34] [Client thread/WARN]: File minecraft:sounds/mob/horse/zombie/hit3.ogg does not exist, cannot add it to event minecraft:mob.horse.zombie.hit
+[13:22:35] [Client thread/WARN]: File minecraft:sounds/random/glass3.ogg does not exist, cannot add it to event minecraft:dig.glass
+[13:22:35] [Client thread/WARN]: File minecraft:sounds/random/glass3.ogg does not exist, cannot add it to event minecraft:game.potion.smash
+[13:23:17] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[13:23:17] [Server thread/INFO]: Generating keypair
+[13:23:17] [Server thread/INFO]: Preparing start region for level 0
+[13:23:18] [Server thread/INFO]: Preparing spawn area: 46%
+[13:23:19] [Server thread/INFO]: Changing view distance to 3, from 10
+[13:23:20] [Server thread/INFO]: Player4[local:E:b470baa6] logged in with entity id 156 at (0.5, 4.0, 0.5)
+[13:23:20] [Server thread/INFO]: Player4 がゲームに参加しました
+[13:23:21] [Server thread/INFO]: Saving and pausing game...
+[13:23:22] [Server thread/INFO]: Saving chunks for level 'KasuteraMod'/Overworld
+[13:23:22] [Server thread/INFO]: Saving chunks for level 'KasuteraMod'/Nether
+[13:23:22] [Server thread/INFO]: Saving chunks for level 'KasuteraMod'/The End
+[14:25:56] [Server thread/INFO]: Player4 は [所持品の確認] の実績を取得した
+[14:25:56] [Client thread/INFO]: [CHAT] Player4 は [所持品の確認] の実績を取得した
+[14:26:21] [Server thread/INFO]: [Player4: Player4 は 0.5,10.5,0.5 にテレポートしました]
+[14:26:21] [Client thread/INFO]: [CHAT] Player4 は 0.5,10.5,0.5 にテレポートしました
+[14:26:51] [Server thread/INFO]: [Player4: 現在時刻を1000に設定]
+[14:26:51] [Client thread/INFO]: [CHAT] 現在時刻を1000に設定
+[14:29:54] [Server thread/INFO]: [Player4: Player4 は 0.5,10.5,0.5 にテレポートしました]
+[14:29:54] [Client thread/INFO]: [CHAT] Player4 は 0.5,10.5,0.5 にテレポートしました
+[14:30:12] [Server thread/INFO]: [Player4: Player4 は 0.5,4.5,0.5 にテレポートしました]
+[14:30:12] [Client thread/INFO]: [CHAT] Player4 は 0.5,4.5,0.5 にテレポートしました
+[14:30:17] [Server thread/INFO]: [Player4: Player4 は 0.5,4.0,0.5 にテレポートしました]
+[14:30:17] [Client thread/INFO]: [CHAT] Player4 は 0.5,4.0,0.5 にテレポートしました
+[14:30:23] [Client thread/INFO]: [CHAT] /defaultgamemode, /msg, /testfor, /summon, /spreadplayers, /seed, /achievement, /tellraw, /tell, /gamemode, /toggledownfall, /testforblock, /weather, /me, /scoreboard, /give, /debug, /clear, /say, /kill, /spawnpoint, /setblock, /difficulty, /help, /gamerule, /playsound, /forge, /effect, /enchant, /w, /publish, /xp, /time, /tp, /setworldspawn, /?
+[14:30:37] [Client thread/INFO]: [CHAT] /tell <プレイヤー> <プライベートメッセージ ...>
+[14:30:42] [Client thread/INFO]: [CHAT] /defaultgamemode, /msg, /testfor, /summon, /spreadplayers, /seed, /achievement, /tellraw, /tell, /gamemode, /toggledownfall, /testforblock, /weather, /me, /scoreboard, /give, /debug, /clear, /say, /kill, /spawnpoint, /setblock, /difficulty, /help, /gamerule, /playsound, /forge, /effect, /enchant, /w, /publish, /xp, /time, /tp, /setworldspawn, /?
+[14:30:46] [Client thread/INFO]: [CHAT] 指定されたプレイヤーが見つかりません
+[14:30:48] [Client thread/INFO]: [CHAT] /tp [対象プレイヤー] <移動先プレイヤー> もしくは /tp [対象プレイヤー] <x> <y> <z>
+[14:30:58] [Client thread/INFO]: [CHAT] /forge <subcommand> を使用しましょう。Subcommand(サブコマンド) は tps と track です。
+[14:31:02] [Client thread/INFO]: [CHAT] Dim -1\: 1tickあたりの時間\: 0.042 ms. 1秒あたりのtick数(TPS)\: 20.000
+[14:31:02] [Client thread/INFO]: [CHAT] Dim 1\: 1tickあたりの時間\: 0.009 ms. 1秒あたりのtick数(TPS)\: 20.000
+[14:31:02] [Client thread/INFO]: [CHAT] Dim 0\: 1tickあたりの時間\: 5.924 ms. 1秒あたりのtick数(TPS)\: 20.000
+[14:31:02] [Client thread/INFO]: [CHAT] Overall\: 1tickあたりの時間\: 6.236 ms. 1秒あたりのtick数(TPS)\: 20.000
+[14:31:10] [Client thread/INFO]: [CHAT] /forge track <type> <duration> を使用しましょう。有効な type(種類) は、te (TileEntities) です。 Duration(継続時間) は60より小さい値です。 
+[14:31:37] [Server thread/INFO]: Saving and pausing game...
+[14:31:37] [Server thread/INFO]: Saving chunks for level 'KasuteraMod'/Overworld
+[14:31:37] [Server thread/INFO]: Saving chunks for level 'KasuteraMod'/Nether
+[14:31:37] [Server thread/INFO]: Saving chunks for level 'KasuteraMod'/The End
+[14:31:38] [Server thread/INFO]: Stopping server
+[14:31:38] [Server thread/INFO]: Saving players
+[14:31:38] [Server thread/INFO]: Saving worlds
+[14:31:38] [Server thread/INFO]: Saving chunks for level 'KasuteraMod'/Overworld
+[14:31:38] [Server thread/INFO]: Saving chunks for level 'KasuteraMod'/Nether
+[14:31:38] [Server thread/INFO]: Saving chunks for level 'KasuteraMod'/The End
+[14:31:41] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[14:31:41] [Server thread/INFO]: Generating keypair
+[14:31:41] [Server thread/INFO]: Preparing start region for level 0
+[14:31:41] [Server thread/INFO]: Changing view distance to 3, from 10
+[14:31:42] [Server thread/INFO]: Player4[local:E:dedc54cb] logged in with entity id 1208159 at (0.5, 4.0, 0.5)
+[14:31:42] [Server thread/INFO]: Player4 がゲームに参加しました
+[14:33:00] [Client thread/INFO]: [CHAT] スクリーンショットをファイル名 2016-12-27_14.33.00.png として保存しました
+[14:33:02] [Server thread/INFO]: Saving and pausing game...
+[14:33:02] [Server thread/INFO]: Saving chunks for level 'KasuteraMod'/Overworld
+[14:33:02] [Server thread/INFO]: Saving chunks for level 'KasuteraMod'/Nether
+[14:33:02] [Server thread/INFO]: Saving chunks for level 'KasuteraMod'/The End
+[14:37:27] [Server thread/INFO]: Saving and pausing game...
+[14:37:27] [Server thread/INFO]: Saving chunks for level 'KasuteraMod'/Overworld
+[14:37:27] [Server thread/INFO]: Saving chunks for level 'KasuteraMod'/Nether
+[14:37:27] [Server thread/INFO]: Saving chunks for level 'KasuteraMod'/The End
+[14:38:30] [Server thread/INFO]: Saving and pausing game...
+[14:38:30] [Server thread/INFO]: Saving chunks for level 'KasuteraMod'/Overworld
+[14:38:30] [Server thread/INFO]: Saving chunks for level 'KasuteraMod'/Nether
+[14:38:30] [Server thread/INFO]: Saving chunks for level 'KasuteraMod'/The End
+[14:44:34] [Server thread/INFO]: Saving and pausing game...
+[14:44:34] [Server thread/INFO]: Saving chunks for level 'KasuteraMod'/Overworld
+[14:44:34] [Server thread/INFO]: Saving chunks for level 'KasuteraMod'/Nether
+[14:44:34] [Server thread/INFO]: Saving chunks for level 'KasuteraMod'/The End
+[14:45:01] [Server thread/INFO]: Saving and pausing game...
+[14:45:01] [Server thread/INFO]: Saving chunks for level 'KasuteraMod'/Overworld
+[14:45:01] [Server thread/INFO]: Saving chunks for level 'KasuteraMod'/Nether
+[14:45:01] [Server thread/INFO]: Saving chunks for level 'KasuteraMod'/The End
+[14:45:05] [Server thread/INFO]: Saving and pausing game...
+[14:45:05] [Server thread/INFO]: Saving chunks for level 'KasuteraMod'/Overworld
+[14:45:05] [Server thread/INFO]: Saving chunks for level 'KasuteraMod'/Nether
+[14:45:05] [Server thread/INFO]: Saving chunks for level 'KasuteraMod'/The End
+[14:47:40] [Server thread/INFO]: Saving and pausing game...
+[14:47:40] [Server thread/INFO]: Saving chunks for level 'KasuteraMod'/Overworld
+[14:47:40] [Server thread/INFO]: Saving chunks for level 'KasuteraMod'/Nether
+[14:47:40] [Server thread/INFO]: Saving chunks for level 'KasuteraMod'/The End
+[14:54:53] [Server thread/INFO]: Saving and pausing game...
+[14:54:53] [Server thread/INFO]: Saving chunks for level 'KasuteraMod'/Overworld
+[14:54:53] [Server thread/INFO]: Saving chunks for level 'KasuteraMod'/Nether
+[14:54:53] [Server thread/INFO]: Saving chunks for level 'KasuteraMod'/The End
+[14:58:43] [Server thread/INFO]: Stopping server
+[14:58:43] [Server thread/INFO]: Saving players
+[14:58:43] [Server thread/INFO]: Saving worlds
+[14:58:43] [Server thread/INFO]: Saving chunks for level 'KasuteraMod'/Overworld
+[14:58:43] [Server thread/INFO]: Saving chunks for level 'KasuteraMod'/Nether
+[14:58:43] [Server thread/INFO]: Saving chunks for level 'KasuteraMod'/The End
+[14:58:44] [Client thread/INFO]: Stopping!

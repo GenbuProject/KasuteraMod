@@ -1,0 +1,16 @@
+[
+	{
+		"modid": "KasuteraMod",
+		"name": "かすてら。Mod",
+		"description": "Google+民なら誰もが知ってる§2かすてら。§r氏に関する要素を追加します。",
+		"version": "${version}",
+		"mcversion": "${mcversion}",
+		"url": "",
+		"updateUrl": "",
+		"authorList": ["Genbu Hase", "Genbu Project"],
+		"credits": "Copyright (C) 2015 - 2016 Genbu Hase & Genbu Project All Rights Reversed.",
+		"logoFile": "assets/kasuteramod/textures/Logo.png",
+		"screenshots": [],
+		"dependencies": []
+	}
+]

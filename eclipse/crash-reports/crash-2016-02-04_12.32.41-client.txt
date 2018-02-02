@@ -1,0 +1,121 @@
+---- Minecraft Crash Report ----
+// I bet Cylons wouldn't have this problem.
+
+Time: 16/02/04 12:32
+Description: Rendering item
+
+java.lang.NullPointerException: Rendering item
+	at net.minecraft.item.ItemStack.getItemDamage(ItemStack.java:265)
+	at net.minecraft.client.renderer.entity.RenderItem.renderItemIntoGUI(RenderItem.java:419)
+	at net.minecraft.client.renderer.entity.RenderItem.renderItemAndEffectIntoGUI(RenderItem.java:585)
+	at net.minecraft.client.gui.inventory.GuiContainerCreative.func_147051_a(GuiContainerCreative.java:968)
+	at net.minecraft.client.gui.inventory.GuiContainerCreative.drawGuiContainerBackgroundLayer(GuiContainerCreative.java:795)
+	at net.minecraft.client.gui.inventory.GuiContainer.drawScreen(GuiContainer.java:93)
+	at net.minecraft.client.renderer.InventoryEffectRenderer.drawScreen(InventoryEffectRenderer.java:44)
+	at net.minecraft.client.gui.inventory.GuiContainerCreative.drawScreen(GuiContainerCreative.java:673)
+	at net.minecraft.client.renderer.EntityRenderer.updateCameraAndRender(EntityRenderer.java:1137)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1067)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:962)
+	at net.minecraft.client.main.Main.main(Main.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source)
+	at GradleStart.main(Unknown Source)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at net.minecraft.item.ItemStack.getItemDamage(ItemStack.java:265)
+	at net.minecraft.client.renderer.entity.RenderItem.renderItemIntoGUI(RenderItem.java:419)
+
+-- Item being rendered --
+Details:
+	Item Type: null
+	Item Aux: ~~ERROR~~ NullPointerException: null
+	Item NBT: null
+	Item Foil: ~~ERROR~~ NullPointerException: null
+Stacktrace:
+	at net.minecraft.client.renderer.entity.RenderItem.renderItemAndEffectIntoGUI(RenderItem.java:585)
+	at net.minecraft.client.gui.inventory.GuiContainerCreative.func_147051_a(GuiContainerCreative.java:968)
+	at net.minecraft.client.gui.inventory.GuiContainerCreative.drawGuiContainerBackgroundLayer(GuiContainerCreative.java:795)
+	at net.minecraft.client.gui.inventory.GuiContainer.drawScreen(GuiContainer.java:93)
+	at net.minecraft.client.renderer.InventoryEffectRenderer.drawScreen(InventoryEffectRenderer.java:44)
+	at net.minecraft.client.gui.inventory.GuiContainerCreative.drawScreen(GuiContainerCreative.java:673)
+
+-- Screen render details --
+Details:
+	Screen name: net.minecraft.client.gui.inventory.GuiContainerCreative
+	Mouse location: Scaled: (293, 12). Absolute: (586, 455)
+	Screen size: Scaled: (427, 240). Absolute: (854, 480). Scale factor of 2
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityClientPlayerMP['Player869'/248, l='MpServer', x=377.06, y=5.62, z=-1754.18]]
+	Chunk stats: MultiplayerChunkCache: 617, 617
+	Level seed: 0
+	Level generator: ID 01 - flat, ver 0. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (380,4,-1749), Chunk: (at 12,0,11 in 23,-110; contains blocks 368,0,-1760 to 383,255,-1745), Region: (0,-4; contains chunks 0,-128 to 31,-97, blocks 0,0,-2048 to 511,255,-1537)
+	Level time: 5979 game time, 5979 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 69 total; [EntitySlime['スライム'/129, l='MpServer', x=370.94, y=4.00, z=-1722.03], EntityPig['ブタ'/130, l='MpServer', x=367.50, y=4.00, z=-1683.22], EntitySheep['ヒツジ'/131, l='MpServer', x=355.22, y=4.00, z=-1692.41], EntityCow['ウシ'/132, l='MpServer', x=351.66, y=4.00, z=-1687.64], EntitySheep['ヒツジ'/133, l='MpServer', x=361.31, y=4.00, z=-1686.78], EntityCow['ウシ'/134, l='MpServer', x=362.80, y=4.00, z=-1685.68], EntitySlime['スライム'/135, l='MpServer', x=363.69, y=4.00, z=-1686.79], EntityPig['ブタ'/137, l='MpServer', x=355.13, y=4.00, z=-1675.50], EntitySlime['スライム'/146, l='MpServer', x=372.46, y=4.59, z=-1806.46], EntityChicken['ニワトリ'/147, l='MpServer', x=381.25, y=4.00, z=-1777.56], EntitySheep['ヒツジ'/148, l='MpServer', x=382.06, y=4.00, z=-1758.97], EntityPig['ブタ'/149, l='MpServer', x=374.00, y=4.00, z=-1676.27], EntitySlime['スライム'/154, l='MpServer', x=389.75, y=4.00, z=-1831.92], EntitySlime['スライム'/155, l='MpServer', x=407.29, y=4.00, z=-1812.97], EntitySlime['スライム'/156, l='MpServer', x=397.44, y=4.00, z=-1809.09], EntitySlime['スライム'/157, l='MpServer', x=392.69, y=4.00, z=-1805.75], EntityChicken['ニワトリ'/158, l='MpServer', x=390.51, y=4.00, z=-1789.70], EntitySlime['スライム'/159, l='MpServer', x=393.42, y=4.00, z=-1791.10], EntitySheep['ヒツジ'/160, l='MpServer', x=394.81, y=4.00, z=-1765.31], EntitySheep['ヒツジ'/161, l='MpServer', x=386.47, y=4.00, z=-1771.81], EntitySlime['スライム'/162, l='MpServer', x=391.78, y=4.78, z=-1762.01], EntitySlime['スライム'/163, l='MpServer', x=388.99, y=4.00, z=-1730.34], EntitySlime['スライム'/169, l='MpServer', x=419.21, y=4.74, z=-1836.40], EntityChicken['ニワトリ'/170, l='MpServer', x=405.56, y=4.00, z=-1779.44], EntitySlime['スライム'/171, l='MpServer', x=415.44, y=4.00, z=-1749.22], EntitySlime['スライム'/172, l='MpServer', x=412.53, y=4.00, z=-1737.50], EntitySlime['スライム'/173, l='MpServer', x=405.91, y=4.00, z=-1709.71], EntitySlime['スライム'/174, l='MpServer', x=416.03, y=4.00, z=-1679.00], EntitySlime['スライム'/175, l='MpServer', x=409.05, y=4.83, z=-1686.50], EntitySlime['スライム'/176, l='MpServer', x=412.57, y=4.00, z=-1688.19], EntitySlime['スライム'/177, l='MpServer', x=403.56, y=4.00, z=-1677.59], EntitySlime['スライム'/178, l='MpServer', x=408.27, y=4.81, z=-1675.41], EntitySlime['スライム'/59, l='MpServer', x=310.34, y=4.00, z=-1770.25], EntitySlime['スライム'/189, l='MpServer', x=417.72, y=4.00, z=-1757.34], EntitySlime['スライム'/190, l='MpServer', x=420.09, y=4.00, z=-1724.73], EntitySlime['スライム'/191, l='MpServer', x=430.76, y=4.00, z=-1717.31], EntitySlime['スライム'/192, l='MpServer', x=425.79, y=4.47, z=-1716.11], EntitySlime['スライム'/193, l='MpServer', x=426.09, y=4.00, z=-1701.88], EntitySlime['スライム'/194, l='MpServer', x=419.97, y=5.04, z=-1684.53], EntityPig['ブタ'/198, l='MpServer', x=428.81, y=4.00, z=-1675.31], EntityClientPlayerMP['Player869'/248, l='MpServer', x=377.06, y=5.62, z=-1754.18], EntitySlime['スライム'/76, l='MpServer', x=304.83, y=4.83, z=-1828.62], EntitySlime['スライム'/77, l='MpServer', x=317.25, y=4.00, z=-1823.25], EntitySlime['スライム'/206, l='MpServer', x=448.14, y=4.00, z=-1803.63], EntitySlime['スライム'/78, l='MpServer', x=311.53, y=4.00, z=-1795.50], EntitySlime['スライム'/207, l='MpServer', x=449.03, y=4.00, z=-1743.68], EntitySlime['スライム'/79, l='MpServer', x=312.78, y=4.00, z=-1792.75], EntitySlime['スライム'/208, l='MpServer', x=447.75, y=4.00, z=-1729.13], EntitySlime['スライム'/80, l='MpServer', x=303.28, y=4.00, z=-1799.87], EntitySlime['スライム'/209, l='MpServer', x=449.38, y=4.50, z=-1700.36], EntitySlime['スライム'/81, l='MpServer', x=303.64, y=4.83, z=-1778.10], EntityPig['ブタ'/82, l='MpServer', x=304.84, y=4.00, z=-1713.16], EntityPig['ブタ'/210, l='MpServer', x=445.16, y=4.00, z=-1676.88], EntitySlime['スライム'/83, l='MpServer', x=312.15, y=4.00, z=-1723.38], EntitySlime['スライム'/84, l='MpServer', x=300.86, y=4.00, z=-1720.36], EntitySlime['スライム'/85, l='MpServer', x=312.90, y=4.59, z=-1711.59], EntityPig['ブタ'/213, l='MpServer', x=457.16, y=4.00, z=-1792.78], EntitySlime['スライム'/88, l='MpServer', x=328.38, y=4.00, z=-1804.35], EntitySlime['スライム'/89, l='MpServer', x=328.75, y=4.00, z=-1815.44], EntityPig['ブタ'/217, l='MpServer', x=453.91, y=4.00, z=-1776.91], EntitySlime['スライム'/90, l='MpServer', x=318.16, y=4.34, z=-1807.86], EntitySlime['スライム'/91, l='MpServer', x=325.47, y=4.47, z=-1765.35], EntitySlime['スライム'/92, l='MpServer', x=317.51, y=4.78, z=-1735.29], EntitySlime['スライム'/93, l='MpServer', x=333.41, y=4.00, z=-1698.94], EntitySlime['スライム'/94, l='MpServer', x=327.62, y=4.00, z=-1699.86], EntitySlime['スライム'/95, l='MpServer', x=321.82, y=4.34, z=-1685.00], EntitySlime['スライム'/109, l='MpServer', x=342.23, y=4.81, z=-1730.57], EntityCow['ウシ'/110, l='MpServer', x=338.67, y=4.00, z=-1683.29], EntitySlime['スライム'/24174, l='MpServer', x=334.50, y=4.00, z=-1685.50]]
+	Retry entities: 0 total; []
+	Server brand: fml,forge
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:415)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2566)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:984)
+	at net.minecraft.client.main.Main.main(Main.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source)
+	at GradleStart.main(Unknown Source)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Operating System: Windows 8.1 (amd64) version 6.3
+	Java Version: 1.8.0_60, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 169817088 bytes (161 MB) / 482869248 bytes (460 MB) up to 932184064 bytes (889 MB)
+	JVM Flags: 0 total; 
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP v9.05 FML v7.10.99.99 Minecraft Forge 10.13.4.1558 4 mods loaded, 4 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+	UCHIJAAAA	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) 
+	UCHIJAAAA	FML{7.10.99.99} [Forge Mod Loader] (forgeSrc-1.7.10-10.13.4.1558-1.7.10.jar) 
+	UCHIJAAAA	Forge{10.13.4.1558} [Minecraft Forge] (forgeSrc-1.7.10-10.13.4.1558-1.7.10.jar) 
+	UCHIJAAAA	RealityBuilding{1.0} [Reality Building] (modid-1.0.jar) 
+	GL info: ' Vendor: 'Intel' Version: '4.0.0 - Build 10.18.10.4276' Renderer: 'Intel(R) HD Graphics 4000'
+	Launched Version: 1.7.10
+	LWJGL: 2.9.1
+	OpenGL: Intel(R) HD Graphics 4000 GL version 4.0.0 - Build 10.18.10.4276, Intel
+	GL Caps: Using GL 1.3 multitexturing.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Anisotropic filtering is supported and maximum anisotropy is 16.
+Shaders are available because OpenGL 2.1 is supported.
+
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: []
+	Current Language: 日本語 (日本)
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Anisotropic Filtering: Off (1)

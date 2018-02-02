@@ -1,0 +1,99 @@
+---- Minecraft Crash Report ----
+// Why is it breaking :(
+
+Time: 16/12/22 11:48
+Description: Unexpected error
+
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at com.GenbuProject.KasuteraMod.Mobs.KasuteraCar.interactFirst(KasuteraCar.java:41)
+	at net.minecraft.entity.player.EntityPlayer.interactWith(EntityPlayer.java:1267)
+	at net.minecraft.client.multiplayer.PlayerControllerMP.interactWithEntitySendPacket(PlayerControllerMP.java:472)
+	at net.minecraft.client.Minecraft.func_147121_ag(Minecraft.java:1513)
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:2044)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1039)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:962)
+	at net.minecraft.client.main.Main.main(Main.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source)
+	at GradleStart.main(Unknown Source)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at com.GenbuProject.KasuteraMod.Mobs.KasuteraCar.interactFirst(KasuteraCar.java:41)
+	at net.minecraft.entity.player.EntityPlayer.interactWith(EntityPlayer.java:1267)
+	at net.minecraft.client.multiplayer.PlayerControllerMP.interactWithEntitySendPacket(PlayerControllerMP.java:472)
+	at net.minecraft.client.Minecraft.func_147121_ag(Minecraft.java:1513)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityClientPlayerMP['Player669'/168, l='MpServer', x=525.50, y=5.62, z=-680.50]]
+	Chunk stats: MultiplayerChunkCache: 49, 49
+	Level seed: 0
+	Level generator: ID 01 - flat, ver 0. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (526,4,-672), Chunk: (at 14,0,0 in 32,-42; contains blocks 512,0,-672 to 527,255,-657), Region: (1,-2; contains chunks 32,-64 to 63,-33, blocks 512,0,-1024 to 1023,255,-513)
+	Level time: 67596 game time, 31164 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 44 total; [KasuteraCar['かすてら。カー'/4966095, l='MpServer', x=526.50, y=4.50, z=-679.50], EntityChicken['ニワトリ'/21, l='MpServer', x=472.44, y=4.00, z=-727.44], EntityChicken['ニワトリ'/22, l='MpServer', x=473.47, y=4.00, z=-715.34], EntityChicken['ニワトリ'/33, l='MpServer', x=486.47, y=4.00, z=-720.47], EntityPig['ブタ'/34, l='MpServer', x=491.97, y=4.00, z=-704.06], EntityChicken['ニワトリ'/36, l='MpServer', x=487.56, y=4.00, z=-696.44], EntitySheep['ヒツジ'/37, l='MpServer', x=492.28, y=4.00, z=-700.53], EntityItem['item.item.egg'/4893807, l='MpServer', x=501.84, y=4.13, z=-706.97], EntityItem['item.item.egg'/4727533, l='MpServer', x=465.63, y=4.13, z=-714.22], EntityChicken['ニワトリ'/38, l='MpServer', x=492.63, y=4.00, z=-697.53], EntityChicken['ニワトリ'/39, l='MpServer', x=487.63, y=4.00, z=-687.56], EntityClientPlayerMP['Player669'/168, l='MpServer', x=525.50, y=5.62, z=-680.50], EntityChicken['ニワトリ'/41, l='MpServer', x=483.63, y=4.00, z=-685.41], EntityPig['ブタ'/42, l='MpServer', x=486.13, y=4.00, z=-670.88], EntitySheep['ヒツジ'/43, l='MpServer', x=489.22, y=4.00, z=-644.34], EntityPig['ブタ'/44, l='MpServer', x=494.16, y=4.00, z=-627.81], EntityChicken['ニワトリ'/46, l='MpServer', x=496.66, y=4.00, z=-710.44], EntitySheep['ヒツジ'/47, l='MpServer', x=502.72, y=4.00, z=-704.81], EntityItem['item.item.egg'/4632169, l='MpServer', x=489.13, y=4.13, z=-686.88], EntityChicken['ニワトリ'/48, l='MpServer', x=507.47, y=4.00, z=-710.47], EntitySheep['ヒツジ'/49, l='MpServer', x=503.47, y=4.00, z=-710.88], EntityPig['ブタ'/50, l='MpServer', x=510.06, y=4.00, z=-713.03], EntityChicken['ニワトリ'/52, l='MpServer', x=502.41, y=4.00, z=-708.31], EntityPig['ブタ'/53, l='MpServer', x=498.84, y=4.00, z=-710.97], EntityItem['item.item.egg'/4191367, l='MpServer', x=485.00, y=4.13, z=-686.03], EntitySheep['ヒツジ'/57, l='MpServer', x=493.19, y=4.00, z=-702.16], EntitySheep['ヒツジ'/58, l='MpServer', x=498.16, y=4.00, z=-699.56], EntitySheep['ヒツジ'/59, l='MpServer', x=492.09, y=4.00, z=-708.19], EntityPig['ブタ'/60, l='MpServer', x=498.31, y=4.00, z=-702.38], EntitySheep['ヒツジ'/62, l='MpServer', x=496.16, y=4.00, z=-649.34], EntitySheep['ヒツジ'/63, l='MpServer', x=499.06, y=4.00, z=-642.22], EntitySheep['ヒツジ'/64, l='MpServer', x=496.56, y=4.00, z=-635.91], EntitySheep['ヒツジ'/65, l='MpServer', x=510.91, y=4.00, z=-633.97], EntitySheep['ヒツジ'/66, l='MpServer', x=493.16, y=4.00, z=-631.38], EntityPig['ブタ'/67, l='MpServer', x=511.84, y=4.00, z=-630.41], EntityPig['ブタ'/68, l='MpServer', x=493.88, y=4.00, z=-642.94], EntitySheep['ヒツジ'/69, l='MpServer', x=503.66, y=4.00, z=-639.50], EntityPig['ブタ'/73, l='MpServer', x=517.94, y=4.00, z=-722.91], EntityPig['ブタ'/74, l='MpServer', x=513.75, y=4.00, z=-713.59], EntityChicken['ニワトリ'/75, l='MpServer', x=516.47, y=4.00, z=-719.47], EntityPig['ブタ'/80, l='MpServer', x=514.88, y=4.00, z=-633.63], EntityItem['item.item.egg'/4922781, l='MpServer', x=505.22, y=4.13, z=-710.03], EntityPig['ブタ'/89, l='MpServer', x=542.06, y=4.00, z=-718.94], EntityItem['item.item.egg'/4768424, l='MpServer', x=486.31, y=4.13, z=-718.59]]
+	Retry entities: 0 total; []
+	Server brand: fml,forge
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:415)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2566)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:991)
+	at net.minecraft.client.main.Main.main(Main.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source)
+	at GradleStart.main(Unknown Source)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Operating System: Windows 8.1 (amd64) version 6.3
+	Java Version: 1.8.0_60, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 810985296 bytes (773 MB) / 1038876672 bytes (990 MB) up to 1038876672 bytes (990 MB)
+	JVM Flags: 5 total; -Xincgc -Xms1024M -Xmx1024M -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=5005
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP v9.05 FML v7.10.99.99 Minecraft Forge 10.13.4.1558 4 mods loaded, 4 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+	UCHIJAAAA	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) 
+	UCHIJAAAA	FML{7.10.99.99} [Forge Mod Loader] (forgeSrc-1.7.10-10.13.4.1558-1.7.10.jar) 
+	UCHIJAAAA	Forge{10.13.4.1558} [Minecraft Forge] (forgeSrc-1.7.10-10.13.4.1558-1.7.10.jar) 
+	UCHIJAAAA	KasuteraMod{1.5} [かすてら。Mod] (かすてら。Modv-1.5.jar) 
+	GL info: ' Vendor: 'Intel' Version: '4.0.0 - Build 10.18.10.4276' Renderer: 'Intel(R) HD Graphics 4000'
+	Launched Version: 1.7.10
+	LWJGL: 2.9.1
+	OpenGL: Intel(R) HD Graphics 4000 GL version 4.0.0 - Build 10.18.10.4276, Intel
+	GL Caps: Using GL 1.3 multitexturing.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Anisotropic filtering is supported and maximum anisotropy is 16.
+Shaders are available because OpenGL 2.1 is supported.
+
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: []
+	Current Language: 日本語 (日本)
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Anisotropic Filtering: Off (1)
