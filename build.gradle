@@ -1,5 +1,5 @@
 def ModName = "KasuteraMod"
-def ModVersion = "1.5"
+def ModVersion = "1.6"
 
 buildscript {
     repositories {
